@@ -1,0 +1,84 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="/">I.T.S</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            {% if request.user.is_authenticated %}
+
+            <li class="nav-item">
+                <a class="nav-link" href="/list_items">List Items</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/add_items">Add Items</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/list_history">List History</a>
+            </li>
+
+            {% endif %}
+
+        </ul>
+        <ul class="navbar-nav">
+            {% if request.user.is_authenticated %}
+            <li>
+                <a href="/accounts/logout"><button class="btn btn-danger">{{user}} | Logout</button></a>
+            </li>
+            {% else %}
+            <li><a href="/accounts/login"><button class="btn btn-primary">Login</button></a></li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<a href="#">
+    <div id="version-display" data-toggle="modal" data-target="#myModal">
+        I . T . S .  
+    </div>
+</a>
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <h4 class="modal-title" style="text-align: center;">System Information</h4>
+
+            </div>
+            <div class="modal-body">
+                <div class="dev-info">
+                    <p class=""><b>Inventory Tracking System</b></p>
+                    <p>VERSION: 1.1</p>
+                    <a href="https://github.com/radonintro1234" target="_blank">
+                        <p>
+                            <!-- <link rel="icon" href="/static/img/its_icon.ico"> -->
+                            <img width="40" height="40" src="/static/img/its_icon.png" alt="Developer Logo">
+                        </p>
+                    </a>
+                    <br>
+                    <p class="modal-header">DEVELOPED BY:</p>
+                    <p>Rishi Mule</p>
+                    <p>Shubham Mulik</p>
+                    <p>Gaurav Gend</p>
+                    <p>Vedant Padwal</p>
+
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>

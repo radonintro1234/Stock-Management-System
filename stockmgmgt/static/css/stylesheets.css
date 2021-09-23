@@ -1,0 +1,133 @@
+body {
+    background-color: #34eb6b;
+}
+
+.table {
+    font-size: 13px;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+
+.table tr:nth-child(odd) {
+    background: #b8cae4;
+}
+
+.table tr:nth-child(even) {
+    background: #dae5f4;
+}
+
+.display_table {
+    /* border-bottom-right-radius: 20px; */
+    /*border-bottom-left-radius: 20px;*/
+    /* border-top-left-radius: 20px; */
+    /* border-top-right-radius: 20px; */
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-shadow: 12px 12px 20px 6px #2e6da4;
+}
+
+.header {
+    font-family: helvetica;
+    color: #337ab7;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    text-shadow: 6px 6px 6px #c9c6c6;
+    display: block;
+    font-weight: bolder;
+}
+
+.delete_img {
+    width: 5px;
+    height: auto;
+}
+
+.success {
+    list-style: none;
+    background-color: #2e6da4;
+    color: white;
+    box-shadow: 12px 12px 12px #e61c66;
+    text-align: center;
+}
+
+.mybutton {
+    width: 100%;
+}
+
+th {
+    background-color: #337ab7;
+    color: white;
+}
+
+body {
+    background-image: url("../img/bg.png");
+    background-attachment: fixed;
+    background-size: auto;
+}
+
+
+
+/* Version Button */
+#version-display{
+    background-color: #b189d6;
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 12px 12px #78a6d3;
+    text-align: center;
+    display: inline;
+    font-weight: bolder;
+    padding: 15px;
+    position: fixed;
+    top: 40px;
+    left: -5px;
+    z-index: 3000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+
+ /* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #e61c66;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #e61c66;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+
+.dev-info{
+    width: 50%;
+    text-align: center;
+    font-family: helvetica;
+    font-weight: bold;
+    display: inline;
+}
+
+.dev-info-logo{
+    width: 50px;
+    float: left;
+}
