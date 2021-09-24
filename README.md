@@ -1,17 +1,12 @@
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
+[![Forks][forks-shield]]
+[![Stargazers][stars-shield]]
+[![Issues][issues-shield]]
+[![MIT License][license-shield]]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/radonintro1234/Stock-Management-System">
     <img src="stockmgmgt/static/img/its_icon.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -20,18 +15,14 @@
   <p align="center">
     A Stock Management System using Django framework and MySQL database.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/radonintro1234/Stock-Management-System"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/radonintro1234/Stock-Management-System/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/radonintro1234/Stock-Management-System/pulls">Request Feature</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -47,94 +38,109 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#run-server">Run Server</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#screenshots">Screenshots</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This Inventory Tracker & Management Project is a System Application designed for a particular Department in an Academic Institution. Tracking things manually and maintaining record in books may lead to manual errors and it increases human efforts.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+So, “The Main Aim of this project is to reduce the stress of tracking by Substituting manpower with Automation.”
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+- This application provides the users to handle brands, categories, products, as well as report of the location of a particular item.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+- The system merely records restocking data and provides warning of low stock at any location through notification at a specified interval.
+
+- The system is used to track items and parts as they are imported to the Department, transferred between Classrooms, and finally if loaned to a person (staff or student).
+
+- In future, we can develop android application for this project. So that status of inventory in stock can be seen on mobile phones anywhere in the world. This leads to easy and effective management of the inventory.
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
-
-
+- [Django](https://www.djangoproject.com/)
+- [Python](https://www.python.org/)
+- [MySQL](https://www.mysql.com/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Javascript](https://www.javascript.com/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+<br>
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+- pip
   ```sh
-  npm install npm@latest -g
+  pip install django
   ```
 
-### Installation
+### Run Server
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Create and activate an environment.
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/radonintro1234/Stock-Management-System.git
    ```
-3. Install NPM packages
+3. Change Directory to project folder.
    ```sh
-   npm install
+   cd Stock-Management-System
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
+4. Start the server
+   ```sh
+   python manage.py runserver
    ```
 
 
+## Screenshots
 
-<!-- USAGE EXAMPLES -->
-## Usage
+- Login Page
+![login-page-screenshot]
+<br>
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+- Home Page
+![home-page-screenshot]
+<br>
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- Add Item Page
+![add-item-page-screenshot]
+<br>
 
+- Item Details Page
+![item-details-page-screenshot]
+<br>
+
+- History Page
+![history-page-screenshot]
+<br>
+
+- System Information Page
+![system-information-page-screenshot]
 
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
-
-
+See the [open issues](https://github.com/radonintro1234/Stock-Management-System/issues) for a list of proposed features (and known issues).
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -145,54 +151,40 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
+
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Rishi Mule - radonintro1234@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
+Project Link: [https://github.com/radonintro1234/Stock-Management-System](https://github.com/radonintro1234/Stock-Management-System)
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
+
+[forks-shield]: https://img.shields.io/github/forks/radonintro1234/Stock-Management-System
+
+[stars-shield]: https://img.shields.io/github/stars/radonintro1234/Stock-Management-System
+
+[issues-shield]: https://img.shields.io/github/issues/radonintro1234/Stock-Management-System
+
+[license-shield]: https://img.shields.io/github/license/radonintro1234/Stock-Management-System
+
+[product-screenshot]: Screenshots/Home_page.png
+
+[login-page-screenshot]: Screenshots/Login_page.png
+[home-page-screenshot]: Screenshots/Home_page.png
+[add-item-page-screenshot]: Screenshots/Add_item_page.png
+[item-details-page-screenshot]: Screenshots/Item_details_page.png
+[history-page-screenshot]: Screenshots/History_page.png
+[system-information-page-screenshot]: Screenshots/System_information_Block.png
